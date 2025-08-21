@@ -1,6 +1,6 @@
-import { blogs } from "../constants";
-import Blogpost from "./Blogpost";
-import Container from "./common/container";
+import { blogs } from "../../constants";
+import Blogpost from "../cards/Blogpost";
+import Container from "../common/container";
 
 const RecentBlogs = () => {
   return (

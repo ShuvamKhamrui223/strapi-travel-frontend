@@ -28,7 +28,10 @@ const SectionWithImage = ({ SectionWithImageContent }) => {
             </div>
             <Image
               src={getStrapiImage(SectionWithImageContent.sectionMedia.url)}
-              alt={SectionWithImageContent.sectionMedia.alternativeText}
+              alt={
+                SectionWithImageContent.sectionMedia.alternativeText ??
+                SectionWithImageContent.sectionWithImageHeader.backgroundTitle+" section side image"
+              }
               width={500}
               height={550}
             />

@@ -1,8 +1,8 @@
-import { footerContent } from "../../constants";
 import Container from "./container";
 import Link from "next/link";
 
-const Footer = () => {
+const Footer = ({ footerContent }) => {
+  if (!footerContent) return null;
   return (
     <footer className="bg-[hsl(15_60%_5%)] py-20">
       <Container>

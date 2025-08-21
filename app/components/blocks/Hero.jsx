@@ -1,9 +1,9 @@
-import Container from "./common/container";
+import Container from "../common/container";
 import Image from "next/image";
-import { getStrapiImage } from "../utils/strapiFetch";
+import { getStrapiImage } from "../../utils/strapiFetch";
 import Link from "next/link";
 
-export const Hero = ({ heroContent }) => {
+const Hero = ({ heroContent }) => {
   const textVarients = {
     initial: {
       x: -500,
@@ -52,3 +52,4 @@ export const Hero = ({ heroContent }) => {
     </section>
   );
 };
+export default Hero;

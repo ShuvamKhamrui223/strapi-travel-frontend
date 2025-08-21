@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Button from "./common/Button";
-import Container from "./common/container";
-import { getStrapiImage } from "../utils/strapiFetch";
+import Button from "../common/Button";
+import Container from "../common/container";
+import { getStrapiImage } from "../../utils/strapiFetch";
 import Link from "next/link";
 
-export const CTA = ({ ctaContent }) => {
+const CTA = ({ ctaContent }) => {
   return (
     <section className=" relative h-auto  md:max-h-[30rem] flex items-center justify-center">
       <Image
@@ -34,3 +34,4 @@ export const CTA = ({ ctaContent }) => {
     </section>
   );
 };
+export default CTA;

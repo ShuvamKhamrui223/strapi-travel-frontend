@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: hsl(0, 0%, 98%);
+  --background: hsl(0, 0%, 99.9%);
   --foreground: hsl(0, 0%, 9%);
   --orange: hsl(32, 100%, 51%);
 }

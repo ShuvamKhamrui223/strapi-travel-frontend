@@ -3,4 +3,5 @@ export const endpoints = {
   HOMEPAGE: "/api/homepage",
   ABOUTPAGE: "/apiaboutpage",
   CONTACTPAGE: "/api/contactpage",
+  BLOGS: "/api/blogs",
 };

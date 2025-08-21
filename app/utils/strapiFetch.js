@@ -1,6 +1,7 @@
+// a wrapper function to fetch data from strapi with caching enabled
 export async function fetchFromStrapi(
   endpoint = "",
-  revalidateDuration = 60 * 60 * 1000
+  revalidateDuration = 24 * 60 * 60 * 1000
 ) {
   try {
     if (!process.env.NEXT_PUBLIC_STRAPI_BASE_URL) {
@@ -26,11 +27,13 @@ export async function fetchFromStrapi(
       return result;
     }
   } catch (error) {
-    console.log(error);
+    return error;
   } finally {
     console.log("exit from fetch");
   }
 }
+
+// function to get a valid image strapi url
 export function getStrapiImage(imageURL) {
   if (imageURL == null || undefined) {
     throw new Error("image url not provided");
